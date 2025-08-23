@@ -1,4 +1,5 @@
 # react19.1-playground
+
 A personal practice and learning space for exploring concepts from the React 19.1 documentation. This repository contains structured examples, demos, and exercises covering new and existing features in React, including components, hooks, state management, and concurrent rendering.
 Install nodeJs
 Install npm
@@ -26,3 +27,10 @@ Displaying Data
 -Create a user object to define user profile details
 -Create a Profile component and use display user details
 -Adapt the styles to the profile using inline CSS within JSX
+
+Conditional Rendering
+-AdminPanel will be replaced with a coponent redering a list of products
+-LoginForm will be replaced with a component rendering Login Form
+-Explore more options of conditional rendering logic explained. Add and comment out code for exploration
+
+Rendering Lists
