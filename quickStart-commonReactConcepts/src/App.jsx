@@ -11,12 +11,12 @@ const user = {
 };
 
 // creating your first react component
-function MyButton() {
+function MyButton({ count, wasClicked }) {
 	// declare a state variable
-	const [count, setCount] = useState(0);
+	//const [count, setCount] = useState(0);
 
 	// handleClick function
-	function handleClick() {
+	/*function handleClick() {
 		alert("You clicked me!");
 		setCount(count + 1);
 	}
@@ -25,7 +25,8 @@ function MyButton() {
 			I'm a button.
 			<br />I have been clicke {count} times.
 		</button>
-	);
+	);*/
+	return <button onClick={wasClicked}>Clicked {count} times</button>;
 }
 
 // writing markup with JSX
@@ -89,14 +90,24 @@ function Products() {
 }
 
 //Will nest the MyButton Component into App Component which is our main component in this file
+// will use this for sharing data between components demo | state management code above
 export default function App() {
+	const [count, setCount] = useState(0);
 	const isLoggedIn = true; // vary the value between true and false
+
+	function handleClick() {
+		alert("You clicked me!");
+		setCount(count + 1);
+	}
+
 	return (
 		<div>
 			<h1>Welcome to my app</h1>
 			<AboutPage />
 			<div>{isLoggedIn ? <Products /> : <LoginForm />}</div>
-			<MyButton />
+			<h1>Counters that update together</h1>
+			<MyButton count={count} wasClicked={handleClick} />
+			<MyButton count={count} wasClicked={handleClick} />
 		</div>
 	);
 }
