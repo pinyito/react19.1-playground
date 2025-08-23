@@ -34,3 +34,18 @@ Conditional Rendering
 -Explore more options of conditional rendering logic explained. Add and comment out code for exploration
 
 Rendering Lists
+-Create a an array of products
+-Using JavaScript map() function transform the array into <li></li> tags with items, making use of the key attribute
+
+Responding to Events
+-Create a handler function within the component
+-Pass the handler function down to the button
+
+Updating the Screen
+-Import useState
+-Declare state variable (an array)
+-useState provides 2 items within the dcalred array, the current state and the function that lets you update the current state
+-Practice: Render the component multiple times, and notice how each component remembers its own data and doesn't affect the other
+
+Using Hooks
+-Check out the API Reference

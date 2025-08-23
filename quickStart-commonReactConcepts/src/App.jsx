@@ -1,5 +1,7 @@
 //import css file
 import "./App.css";
+// import useState from React
+import { useState } from "react";
 
 //Create user object
 const user = {
@@ -10,10 +12,20 @@ const user = {
 
 // creating your first react component
 function MyButton() {
+	// declare a state variable
+	const [count, setCount] = useState(0);
+
+	// handleClick function
 	function handleClick() {
 		alert("You clicked me!");
+		setCount(count + 1);
 	}
-	return <button onClick={handleClick}>I'm a button</button>;
+	return (
+		<button onClick={handleClick}>
+			I'm a button.
+			<br />I have been clicke {count} times.
+		</button>
+	);
 }
 
 // writing markup with JSX
