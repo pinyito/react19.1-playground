@@ -49,3 +49,26 @@ Updating the Screen
 
 Using Hooks
 -Check out the API Reference
+
+Sharing Data Between Components
+-We make use of props
+
+QUICK START PROJECTS TUTORIALS
+1.Tic-Tac-Toe
+-Build an interactive tic-tac-toa game with React
+-Try to read and mark each loc or section of loc within the code provided about what is expected at the end. Relate concpets with what you just learned.
+-In addition, identify and jot down some patterns
+
+=>Setup for the tutorial
+-Create the main component (Square) for the game
+-Explore the setup code line by line
+-Create styles.css; we'll then import it into App.jsx
+-src/styles.css
+-Click fork to view the sandbox and copy/rewrite the (\*, body, and .square) styles code into your local styles.css
+-Import styles.css into Square.jsx instead of index.js as stated
+=>Overview
+-Building the board
+-Make nine squares and add naumbering instead of X
+-Group then into 3 by wrapping into a div and apply some styles (.board-row)
+=>Completing the game
+=>Adding time travel

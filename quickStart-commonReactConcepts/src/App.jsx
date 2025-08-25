@@ -1,9 +1,11 @@
-//import css file
+// import css file
 import "./App.css";
 // import useState from React
 import { useState } from "react";
+// import the tictactoe component
+import Square from "./projects/Square.jsx";
 
-//Create user object
+// create user object
 const user = {
 	name: "Eria Othieno Pinyi",
 	imageUrl: "src/assets/Eria.jpeg",
@@ -108,6 +110,8 @@ export default function App() {
 			<h1>Counters that update together</h1>
 			<MyButton count={count} wasClicked={handleClick} />
 			<MyButton count={count} wasClicked={handleClick} />
+			<hr />
+			<Square />
 		</div>
 	);
 }
